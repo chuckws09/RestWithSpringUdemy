@@ -1,5 +1,8 @@
 language: bash
 services: docker
+before_install:
+  - cd Person
+  - echo "We are in the docker folder"
 script:
   - docker-compose build
 before_deploy:
